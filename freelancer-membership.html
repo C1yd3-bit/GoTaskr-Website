@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Freelancer Membership - GoTaskr</title>
+  <link rel="stylesheet" href="freelancer-membership.css" />
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <a href="index.html">GoTaskr</a>
+    </div>
+  </nav>
+
+  <header>
+    <h1>👷 Freelancer Membership Plans</h1>
+    <p class="subtitle">Choose a plan to enhance how you work and earn on GoTaskr</p>
+  </header>
+
+  <div class="membership-container">
+
+    <!-- Basic Member -->
+    <div class="plan-card free">
+      <h2>🟩 Basic Member</h2>
+      <div class="price">Free</div>
+      <ul>
+        <li>✅ Post up to 5 short-term jobs</li>
+        <li>💬 Chat with freelancers</li>
+        <li>💳 Pay freelancer directly (cash or Interac)</li>
+        <li>💰 Platform Fee: 10% per job</li>
+        <li>🛡️ Optional Glad Insurance available ($5/job)</li>
+        <li>🚫 Not allowed for long-term or repeat hiring</li>
+        <li>❌ Cannot request replacements or scheduling support</li>
+        <li>🔒 Want consistent or weekly help? Upgrade required.</li>
+      </ul>
+      <button class="select-btn" onclick="selectPlan('Basic Member')">Choose Basic</button>
+    </div>
+
+    <!-- Weekly/Rotating Member -->
+    <div class="plan-card rotating">
+      <h2>🟡 Weekly/Rotating Member</h2>
+      <div class="price">$49.99/month <br><span>+ HST (13%)</span></div>
+      <ul>
+        <li>✅ Post unlimited jobs (weekly or rotating)</li>
+        <li>🔁 Rehire freelancers, rotate teams, or request consistent support</li>
+        <li>📅 Schedule workers in advance</li>
+        <li>📞 Priority client support</li>
+        <li>💰 Platform Fee: 5–10% per job<br><small>(5% if regular/rotating, 10% if urgent)</small></li>
+        <li>🛡️ Optional Glad Insurance: $5/job</li>
+        <li>💳 Payment flexibility: cash, Interac, or direct credit card via GoTaskr</li>
+      </ul>
+      <button class="select-btn" onclick="selectPlan('Weekly/Rotating Member')">Choose Weekly</button>
+    </div>
+
+    <!-- Long-Term Staffing Member -->
+    <div class="plan-card premium">
+      <h2>🔴 Long-Term Staffing Member</h2>
+      <div class="price">$99.99/month <br><span>+ HST (13%)</span></div>
+      <ul>
+        <li><em>Details coming soon...</em></li>
+      </ul>
+      <button class="select-btn" onclick="selectPlan('Long-Term Staffing Member')">Choose Long-Term</button>
+    </div>
+
+    <!-- Optional Add-ons -->
+    <div class="plan-card addons">
+      <h2>⚙️ Optional Add-ons</h2>
+      <ul>
+        <li>🚀 Visibility Boost: $10/week to highlight profile</li>
+        <li>🧰 Extra Job Categories: $5/month each</li>
+        <li>📍 Zip Code Priority: Match in preferred zones first</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Link JS -->
+  <script src="freelancer-membership.js"></script>
+</body>
+</html>

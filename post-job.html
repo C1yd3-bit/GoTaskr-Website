@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Post a Job - GoTaskr</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <a href="index.html"><img src="Gotask.png" alt="GoTaskr Logo" /></a>
+    </div>
+    <ul id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="post-job.html">Post Job</a></li>
+      <li id="helloUser" style="display: none;"><a href="view-profile.html" id="helloUserLink"></a></li>
+      <li id="loginNav"><a href="login.html">Login</a></li>
+    </ul>
+  </nav>
+
+  <section class="form-container">
+    <h2>Post a Job</h2>
+    <form id="postJobForm">
+      <div class="form-group">
+        <label for="title">Job Title</label>
+        <input type="text" id="title" placeholder="Enter job title" required />
+      </div>
+      <div class="form-group">
+        <label for="location">Location</label>
+        <input type="text" id="location" placeholder="Enter location" />
+      </div>
+      <div class="form-group">
+        <label for="category">Category</label>
+        <input type="text" id="category" placeholder="e.g., Cleaning, Delivery" required />
+      </div>
+      <div class="form-group">
+        <label for="rate">Rate</label>
+        <input type="text" id="rate" placeholder="e.g., $15/hr" />
+      </div>
+      <div class="form-group">
+        <label for="description">Description</label>
+        <textarea id="description" placeholder="Enter job description" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="expiration">Expiration Date</label>
+        <input type="date" id="expiration" name="expiration" required />
+      </div>
+
+      <p id="successMsg" class="success-message"></p>
+      <button type="submit">Post Job</button>
+    </form>
+  </section>
+
+  <script src="post-job.js"></script>
+  
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+/* General Page Styling */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #43cea2, #185a9d);
+  color: #fff;
+}
+
+/* Navigation */
+nav {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 1rem 2rem;
+  text-align: left;
+}
+
+.logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+/* Header Area */
+header {
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+/* Plan Layout */
+.membership-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* Card Styling */
+.plan-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 12px;
+  width: 300px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease;
+  text-align: center;
+  border: 2px solid transparent;
+}
+
+.plan-card:hover {
+  transform: translateY(-5px);
+}
+
+.plan-card h2 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 1rem 0;
+  background-color: #fff;
+  color: #185a9d;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+/* Plan Details */
+.plan-card ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 1.5rem 0;
+  text-align: left;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.plan-card ul li::before {
+  content: "• ";
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Button Styling */
+.select-btn {
+  background-color: #fff;
+  color: #185a9d;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.select-btn:hover {
+  background-color: #ffd700;
+  color: #000;
+}
+
+/* Color-coded card borders */
+.basic {
+  border-color: #00ff91;
+}
+
+.premium {
+  border-color: gold;
+}
+
+.vip {
+  border-color: #ff6060;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .membership-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .plan-card {
+    width: 90%;
+  }
+}
+.rotating {
+  border-color: #fdd835;
+}
+
+.premium {
+  border-color: #e53935;
+}

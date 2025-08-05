@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create Profile - GoTaskr</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <a href="index.html"><img src="Gotask.png" alt="GoTaskr Logo" /></a>
+    </div>
+    <ul id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li class="dropdown">
+        <button class="dropdown-btn" onclick="toggleDropdown()">Services</button>
+        <div class="dropdown-content" id="dropdown">
+          <a href="#">Cleaning</a>
+          <a href="#">Delivery</a>
+          <a href="#">Handyman</a>
+        </div>
+      </li>
+      <li><a href="login.html" id="loginLink">Login</a></li>
+    </ul>
+  </nav>
+
+  <section class="form-container">
+    <h2>Create Your Profile</h2>
+    <p id="membershipInfo" class="membership-tag" style="font-weight: bold; margin-bottom: 10px;"></p>
+
+    <form id="profileForm">
+      <!-- Freelancer Fields -->
+      <div id="freelancerFields" style="display: none;">
+        <div class="form-group">
+          <label for="fullName">Full Name:</label>
+          <input type="text" id="fullName" required />
+        </div>
+        <div class="form-group">
+          <label for="address">Address:</label>
+          <input type="text" id="address" required />
+        </div>
+        <div class="form-group">
+          <label for="city">City:</label>
+          <select id="city" required>
+            <option value="">Select City</option>
+            <option value="Toronto">Toronto</option>
+            <option value="Vancouver">Vancouver</option>
+            <option value="Montreal">Montreal</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="province">Province:</label>
+          <select id="province" required>
+            <option value="">Select Province</option>
+            <option value="Ontario">Ontario</option>
+            <option value="British Columbia">British Columbia</option>
+            <option value="Quebec">Quebec</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="postalCode">Postal Code:</label>
+          <input type="text" id="postalCode" required />
+        </div>
+        <div class="form-group">
+          <label for="contact">Contact Number:</label>
+          <input type="text" id="contact" required />
+        </div>
+        <div class="form-group">
+          <label for="profilePhoto">Profile Photo:</label>
+          <input type="file" id="profilePhoto" />
+          <p id="photo-name" style="font-size: 0.9rem;"></p>
+        </div>
+        <div class="form-group">
+          <label for="resume">Resume:</label>
+          <input type="file" id="resume" />
+          <p id="resume-name" style="font-size: 0.9rem;"></p>
+        </div>
+        <div class="form-group">
+          <label for="certificates">Certificates:</label>
+          <input type="file" id="certificates" multiple />
+          <p id="certificates-name" style="font-size: 0.9rem;"></p>
+        </div>
+      </div>
+
+      <!-- Client Fields -->
+      <div id="clientFields" style="display: none;">
+        <div class="form-group">
+          <label for="companyName">Company Name:</label>
+          <input type="text" id="companyName" required />
+        </div>
+        <div class="form-group">
+          <label for="businessAddress">Business Address:</label>
+          <input type="text" id="businessAddress" required />
+        </div>
+        <div class="form-group">
+          <label for="businessLogo">Company Logo:</label>
+          <input type="file" id="businessLogo" />
+          <p id="logo-name" style="font-size: 0.9rem;"></p>
+        </div>
+        <div class="form-group">
+          <label for="description">Company Description:</label>
+          <textarea id="description" rows="4" required></textarea>
+        </div>
+      </div>
+
+      <button type="submit" class="find-job-btn">Save Profile</button>
+    </form>
+  </section>
+
+  <script src="profile.js"></script>
+</body>
+</html>

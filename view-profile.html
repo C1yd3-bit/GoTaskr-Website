@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>View Profile - GoTaskr</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <a href="index.html"><img src="Gotask.png" alt="GoTaskr Logo" /></a>
+    </div>
+    <ul id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li class="dropdown">
+        <button class="dropdown-btn" onclick="toggleServiceDropdown()">Services</button>
+        <div class="dropdown-content" id="dropdown">
+          <a href="#">Cleaning</a>
+          <a href="#">Delivery</a>
+          <a href="#">Handyman</a>
+        </div>
+      </li>
+      <li><a href="login.html" id="loginLink">Login</a></li>
+    </ul>
+  </nav>
+
+  <section class="form-container">
+    <h2>User Profile</h2>
+    <div id="profileDetails" class="form-group" style="color: white; font-size: 1rem;"></div>
+
+    <div class="button-group" id="editButtonGroup">
+      <a href="profile.html" class="find-job-btn">Edit Profile</a>
+    </div>
+  </section>
+
+  <script src="view-profile.js"></script>
+  <script src="login.js"></script>
+  
+
+</body>
+</html>

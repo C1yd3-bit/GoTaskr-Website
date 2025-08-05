@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome - GoTaskr</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <a href="index.html"><img src="Gotask.png" alt="GoTaskr Logo" /></a>
+    </div>
+    <ul id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li class="dropdown">
+        <button class="dropdown-btn" onclick="toggleServiceDropdown()">Services</button>
+        <div class="dropdown-content" id="dropdown">
+          <a href="#">Cleaning</a>
+          <a href="#">Delivery</a>
+          <a href="#">Handyman</a>
+        </div>
+      </li>
+      <li id="postJobNav" style="display: none;"><a href="post-job.html">Post Job</a></li>
+      <li id="helloUser" style="display: none;"><a href="view-profile.html" id="helloUserLink"></a></li>
+      <li id="loginNav"><a href="login.html">Login</a></li>
+    </ul>
+  </nav>
+
+  <section id="welcome" class="section welcome-section">
+    <h1>Welcome to GoTaskr</h1>
+    <p id="welcomeSubtitle">Find Awesome Work!, anytime.</p> <!-- Add ID here -->
+    <div class="button-group">
+      <a href="jobs.html" class="find-job-btn" id="findJobBtn">Find a Job</a>
+      <a href="post-job.html" class="post-job-btn" id="postJobBtn" style="display: none;">Post a Job</a>
+    </div>
+  </section>
+
+  <script src="welcome.js"></script>
+  
+
+</body>
+</html>

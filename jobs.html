@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Find Jobs - GoTaskr</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <a href="index.html"><img src="Gotask.png" alt="GoTaskr Logo" /></a>
+    </div>
+    <ul id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li class="dropdown">
+        <button class="dropdown-btn">Services</button>
+        <div class="dropdown-content" id="dropdown">
+          <a href="#">Cleaning</a>
+          <a href="#">Delivery</a>
+          <a href="#">Handyman</a>
+        </div>
+      </li>
+      <li><a href="login.html" id="loginLink">Login</a></li>
+    </ul>
+  </nav>
+
+  <section class="section two-column-layout">
+    <h1>Browse Available Jobs</h1>
+
+    <!-- 🔍 Search + Sort + Clear (Unified Filter Bar) -->
+    <div class="filters-bar">
+      <input type="text" id="searchInput" class="search-input" placeholder="🔍 Search jobs by title, category, or location..." />
+      <button id="clearFiltersBtn" class="clear-btn">✖ Clear</button>
+
+      <div class="sort-group">
+        <label for="sortBy">Sort by:</label>
+        <select id="sortBy" class="sort-select">
+          <option value="date">📅 Date Posted (Newest)</option>
+          <option value="rate">💵 Rate (Highest)</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- 🧱 Job Panel Layout -->
+    <div class="jobs-container">
+      <div class="job-list" id="jobList">
+        <!-- Job cards go here -->
+      </div>
+      <div class="job-details" id="jobDetails">
+        <p>Select a job to view details.</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="login.js"></script>
+  <script src="jobs.js"></script>
+  
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Client Dashboard - GoTaskr</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <a href="index.html"><img src="Gotask.png" alt="GoTaskr Logo" /></a>
+    </div>
+    <ul id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="post-job.html" id="postJobBtn">Post Job</a></li>
+      <!-- DO NOT include Hello, [username] or Logout here -->
+    </ul>
+  </nav>
+
+  <section class="company-profile">
+    <div class="profile-card">
+      <h2>Your Company Profile</h2>
+      <p><strong>Business Name:</strong> <span id="businessName">N/A</span></p>
+      <p><strong>Description:</strong> <span id="description">N/A</span></p>
+      <p><strong>Location:</strong> <span id="location">N/A</span></p>
+      <p><strong>Contact:</strong> <span id="contact">N/A</span></p>
+      <img id="companyLogo" class="company-logo-preview" src="" alt="Company Logo" style="display:none;" />
+      <button onclick="window.location.href='client-profile.html'" class="find-job-btn">Edit Company Profile</button>
+    </div>
+  </section>
+
+  <section class="posted-jobs">
+    <div class="jobs-header">
+      <h2>Your Posted Jobs</h2>
+    </div>
+    <div id="jobList" class="job-list"></div>
+  </section>
+
+  <div id="editJobModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <form id="editJobForm">
+        <label>Title:<br><input type="text" id="editTitle" required /></label><br>
+        <label>Location:<br><input type="text" id="editLocation" required /></label><br>
+        <label>Category:<br><input type="text" id="editCategory" required /></label><br>
+        <label>Rate:<br><input type="number" id="editRate" required /></label><br>
+        <label>Description:<br><textarea id="editDescription" rows="4" required></textarea></label><br>
+        <label>Expiration Date:<br><input type="date" id="editExpiration" /></label><br>
+        <button type="submit">Save Changes</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="client-dashboard.js"></script>
+  <script src="login.js"></script>
+</body>
+</html>

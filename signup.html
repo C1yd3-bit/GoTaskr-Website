@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up - GoTaskr</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="login-page">
+  <nav>
+    <div class="logo">
+      <a href="index.html"><img src="Gotask.png" alt="GoTaskr Logo" /></a>
+    </div>
+    <ul id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li class="dropdown">
+        <button class="dropdown-btn" onclick="toggleDropdown()">Services</button>
+        <div class="dropdown-content" id="dropdown">
+          <a href="#">Cleaning</a>
+          <a href="#">Delivery</a>
+          <a href="#">Handyman</a>
+        </div>
+      </li>
+      <li id="loginLink"><a href="login.html">Login</a></li>
+    </ul>
+  </nav>
+
+  <section class="form-container login-container">
+    <h2>Create an Account</h2>
+    <form onsubmit="signup(); return false;">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="Choose a username" required />
+      </div>
+
+      <div class="form-group">
+        <label for="userType">Register As:</label>
+        <select id="userType" required>
+          <option value="">Select role</option>
+          <option value="freelancer">Freelancer</option>
+          <option value="client">Client</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <div class="password-wrapper">
+          <input type="password" id="password" placeholder="Choose a password" required />
+          <span class="toggle-password" onclick="togglePasswordVisibility()">👁️</span>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password</label>
+        <div class="password-wrapper">
+          <input type="password" id="confirmPassword" placeholder="Confirm your password" required />
+          <span class="toggle-password" onclick="toggleConfirmPasswordVisibility()">👁️</span>
+        </div>
+      </div>
+
+      <p id="error" class="error-msg"></p>
+      <button type="submit">Next</button>
+    </form>
+
+    <div class="google-login">
+      <a class="google-btn" href="https://accounts.google.com/signin" target="_blank">
+        <img class="google-icon" src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google Icon">
+        Connect with Google
+      </a>
+    </div>
+
+    <p class="alt-link">Already have an account? <a href="login.html">Login</a></p>
+  </section>
+
+  <!-- External Scripts -->
+  <script src="signup.js"></script>
+  <script src="navbar.js" defer></script>
+</body>
+</html>
